@@ -14,10 +14,17 @@ def buy_items(number_of_items: int):
         time.sleep(0.5)
         key_press("f", .5)
 
+        # choose which item to buy based on arrow key
+        item_range = 6
+        for i in range(item_range):
+            time.sleep(0.000001)
+            key_press("s")
+
         # time.sleep(1.5)
-        for i in range(45):
+        backpack_size = 45
+        for i in range(backpack_size):
             time.sleep(0.00001)
-            print(i)
+            # print(i)
             key_press("space")
             time.sleep(0.5)
             key_press("space")
@@ -33,18 +40,26 @@ def buy_items(number_of_items: int):
         key_press("s")
         time.sleep(0.000001)
         key_press("s")
+
+        # uncomment below for tool
+        time.sleep(0.000001)
+        key_press("s")
+
+
         time.sleep(0.000001)
         key_press("enter")
         time.sleep(0.5)
 
-        key_press("s")
-        time.sleep(0.000001)
+        # comment below out for tool
+        # key_press("s")
+        # time.sleep(0.000001)
+
         for i in range(45):
             # print(i)
             key_press("v")
             time.sleep(0.000001)
 
-        key_press("x", .1)
+        key_press("x", 1)
 
         time.sleep(0.000001)
 
