@@ -1,6 +1,7 @@
 from send_input import PressKey, ReleaseKey
 from keys import keys
 import contextlib
+import time
 
 
 @contextlib.contextmanager
@@ -12,3 +13,7 @@ def context_key_press(key: str):
         yield
     finally:
         ReleaseKey(keys[key])
+
+def key_press(key: str, length: float = 0.1):
+    with context_key_press(key):
+        time.sleep(length)
