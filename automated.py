@@ -8,8 +8,8 @@ def open_sealed_caches(number: int):
         time.sleep(2)
         key_press('space', 0.1)
 
-def buy_items(number_of_items: int):
-    for count in range(22):
+def buy_items(num_of_runs, num_of_items):
+    for count in range(num_of_runs):
         print(count)
         time.sleep(0.5)
         key_press("f", .5)
@@ -21,8 +21,7 @@ def buy_items(number_of_items: int):
             key_press("s")
 
         # time.sleep(1.5)
-        backpack_size = 45
-        for i in range(backpack_size):
+        for i in range(num_of_items):
             time.sleep(0.00001)
             # print(i)
             key_press("space")
@@ -54,7 +53,7 @@ def buy_items(number_of_items: int):
         # key_press("s")
         # time.sleep(0.000001)
 
-        for i in range(45):
+        for i in range(num_of_items):
             # print(i)
             key_press("v")
             time.sleep(0.000001)
