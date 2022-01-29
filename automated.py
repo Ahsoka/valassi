@@ -21,6 +21,7 @@ def buy_items(num_of_items: int, bag_space: int = 30):
             time.sleep(0.5)
             key_press("f", .5)
 
+            # NOTE: The line below determines which item will be bought
             key_press('s', 2.5)
 
             time.sleep(1.5)
