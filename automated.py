@@ -14,8 +14,8 @@ def open_sealed_caches(number: int):
 
 def buy_items(num_of_items: int, bag_space: int = 30):
     with tqdm.tqdm(total=num_of_items) as progress:
-        items = iter(range(num_of_items + 1))
         TOTAL_RUNS = math.ceil(num_of_items / bag_space)
+        items = iter(range(num_of_items + TOTAL_RUNS - 1))
 
         for _ in range(TOTAL_RUNS):
             time.sleep(0.5)
