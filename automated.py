@@ -29,7 +29,7 @@ def buy_items(number_of_items: int):
             time.sleep(0.5)
             key_press("space")
 
-        key_press("ESC")
+        key_press("esc")
 
         time.sleep(0.5)
 
@@ -65,9 +65,9 @@ def buy_items(number_of_items: int):
 
         key_press("space")
         time.sleep(0.000001)
-        key_press("ESC")
+        key_press("esc")
         time.sleep(0.000001)
-        key_press("ESC")
+        key_press("esc")
         time.sleep(0.000001)
-        key_press("ESC")
+        key_press("esc")
         time.sleep(0.000001)
