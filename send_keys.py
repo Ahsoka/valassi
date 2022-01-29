@@ -14,6 +14,6 @@ def context_key_press(key: str):
     finally:
         ReleaseKey(keys[key])
 
-def key_press(key: str, length: float = 0.00001):
+def key_press(key: str, length: float = 0.1):
     with context_key_press(key):
         time.sleep(length)
