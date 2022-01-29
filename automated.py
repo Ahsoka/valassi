@@ -54,13 +54,13 @@ def buy_items(num_of_items: int, bag_space: int = 30):
 
             key_press("x", 1.2)
 
-            time.sleep(0.000001)
+            time.sleep(0.01)
 
             key_press("space")
-            time.sleep(0.000001)
+            time.sleep(0.01)
             key_press("esc")
-            time.sleep(0.000001)
+            time.sleep(0.01)
             key_press("esc")
-            time.sleep(0.000001)
+            time.sleep(0.01)
             key_press("esc")
-            time.sleep(0.000001)
+            time.sleep(0.01)
