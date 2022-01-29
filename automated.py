@@ -7,3 +7,6 @@ def open_sealed_caches(number: int):
         key_press('f', 1.75)
         time.sleep(2)
         key_press('space', 0.1)
+
+def buy_items(number_of_items: int):
+    raise NotImplementedError()
