@@ -1,5 +1,7 @@
 from send_keys import key_press, context_key_press
+
 import mouse
+import math
 import time
 
 def open_sealed_caches(number: int):
@@ -9,9 +11,9 @@ def open_sealed_caches(number: int):
         time.sleep(2)
         key_press('space', 0.1)
 
-def buy_items():
-    NUM_OF_ITEMS_TO_BUY = 60
-    TOTAL_RUNS = 2
+def buy_items(num_of_items: int, bag_space: int = 30):
+    items = iter(range(num_of_items + 1))
+    TOTAL_RUNS = math.ceil(num_of_items / bag_space)
 
     for count in range(TOTAL_RUNS):
         time.sleep(0.5)
@@ -21,7 +23,7 @@ def buy_items():
         key_press('s', 2.5)
 
         time.sleep(1.5)
-        for i in range(NUM_OF_ITEMS_TO_BUY):
+        for i, _ in zip(items, range(bag_space)):
             time.sleep(0.1)
             print(i)
             key_press("space")
